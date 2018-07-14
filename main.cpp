@@ -10,7 +10,7 @@ int main() {
     //ptr stores the memory address of var
     void* ptr=&var;
     int* ptr2;
-    //*ptr dereferencing
+    //*ptr dereferencing this way
     *ptr2=9;
     LOG(ptr2);
     LOG(&(*ptr2));
