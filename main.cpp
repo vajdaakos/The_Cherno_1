@@ -1,5 +1,5 @@
 #include <iostream>
-#define  LOG(x) std::cout<<x<<std::endl
+#define  LOG(x) std::cout<<(x)<<std::endl
 int main() {
     /* pointers are just integers, stores memory address
      * type* means that that memory address expected to store "type" type of data
@@ -13,12 +13,12 @@ int main() {
 //    don't work!
 //    LOG(&(*ptr));
 //    LOG(*ptr);
-    int* ppp = (int*) ptr;
+    auto ppp = (int*) ptr;
     LOG(*ppp);
-    int* ptr2;
+    int* ptr2= nullptr;
     int var2;
-    //*ptr dereferencing this way
     ptr2=&var2;
+    //*ptr dereferencing this way
     *ptr2=9;
     LOG(ptr2);
     LOG(&(*ptr2));
