@@ -10,9 +10,12 @@ int main() {
     //ptr stores the memory address of var
     void* ptr=&var;
     LOG(ptr);
-//    don't work!
+//    don't work, becouse ptr is void*
 //    LOG(&(*ptr));
 //    LOG(*ptr);
+//    you cannot dereference a void* pointer!
+//    You must cast it to something!
+
     auto ppp = (int*) ptr;
     LOG(*ppp);
     int* ptr2= nullptr;
