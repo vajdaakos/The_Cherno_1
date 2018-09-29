@@ -1,4 +1,4 @@
-**This is just a exercise stuff**
+**This is just an exercise stuff**
 
 ---
 
